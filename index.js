@@ -7,7 +7,7 @@ dotenv.config()
 const app = express()
 app.use(cors())
 
-app.get('/', (req, res) => {
+app.get('/api/timestamp/:date_string?', (req, res) => {
     const dateString = req.params.date_string
 
     let date
